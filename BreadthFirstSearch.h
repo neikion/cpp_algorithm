@@ -6,12 +6,11 @@
 namespace BREADTH_FIRST_SEARCH {
 	class node {
 	public:
-		int getId();
-		void setId(int);
-		int getValue();
-		node& getParent();
+		int id;
+		int value;
+		node* parent;
+		std::list<node> connectnode;
 		std::list<node>& getConnectNode();
-		void setParent(node&);
 		node& getOriginal();
 		node();
 		node(int,int);
@@ -19,15 +18,11 @@ namespace BREADTH_FIRST_SEARCH {
 		node(const node&);
 		node(node*);
 	private:
-		int id;
-		int value;
-		node* parent;
 		node* original;
-		std::list<node> connectnode;
 	};
 	class BreadthFirstSearch {
 	public:
-		void bfs(node&,int);
+		std::vector<node> bfs(node&,int);
 		void showTest();
 	private:
 		std::vector<node> getBfsResult(node&);
