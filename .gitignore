@@ -434,4 +434,8 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 
+#my ignore
 /note/private/
+*.vcxproj.*
+*.vcxproj
+*.sln
