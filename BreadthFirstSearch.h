@@ -9,20 +9,14 @@ namespace BREADTH_FIRST_SEARCH {
 		int id;
 		int value;
 		node* parent;
-		std::list<node> connectnode;
-		std::list<node>& getConnectNode();
-		node& getOriginal();
+		std::list<node*> connectnode;
 		node();
 		node(int,int);
 		~node();
-		node(const node&);
-		node(node*);
-	private:
-		node* original;
 	};
 	class BreadthFirstSearch {
 	public:
-		std::vector<node> bfs(node&,int);
+		std::vector<node> bfs(node*,int);
 		void showTest();
 	private:
 		std::vector<node> getBfsResult(node&);
