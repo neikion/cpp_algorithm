@@ -35,9 +35,9 @@ namespace mst {
 		node* node2;
 		int cost;
 	};
-	class MSTTree {
+	class MSTtree {
 	public:
-		void init();
+		void testMst();
 		list<Line> getMST(int,list<Line>);
 	};
 }

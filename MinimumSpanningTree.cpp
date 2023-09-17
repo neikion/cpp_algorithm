@@ -4,7 +4,7 @@ using namespace mst;
 node::node(int invalue) :value(invalue) {
 
 }
-void MSTTree::init() {
+void MSTtree::testMst() {
 	const int nodesize = 5;
 	node node[nodesize]{0,1,2,3,4};
 	list<Line> lines;
@@ -46,7 +46,7 @@ void MSTTree::init() {
 		cout << it->cost<<"\n";
 	}
 }
-list<Line> MSTTree::getMST(int nodesize,list<Line> linelist) {
+list<Line> MSTtree::getMST(int nodesize,list<Line> linelist) {
 	int check[6] = {0};
 	list<Line> result;
 	for (int target = 0; target < nodesize; target++) {
