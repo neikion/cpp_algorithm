@@ -13,6 +13,8 @@
 #include "EuclideanAlgorithm.h"
 #include "BreadthFirstSearch.h"
 #include "TreeIndex.h"
+#include "MinimumSpanningTree.h"
+#include "Trie.h"
 
 using namespace EUCLIDEAN_ALGORITHM;
 using namespace std;
@@ -53,6 +55,15 @@ int main()
 	//트리 인덱스 테스트
 	/*TreeIndex::Tree test;
 	test.getParentTreeIndex();*/
+
+	//mst 테스트
+	/*
+	mst::MSTtree test;
+	test.testMst();
+	*/
+
+	//Trie 테스트
+	trie::MainTest();
 
 	//메모리 누수 확인
 	_CrtDumpMemoryLeaks();
